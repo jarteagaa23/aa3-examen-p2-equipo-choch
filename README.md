@@ -14,7 +14,10 @@ El enunciado solicita un número en `aa3-examen-p2-equipo-N`; el equipo decidió
 
 ## Integrantes y contribuciones
 
-Integrantes: pendientes de confirmar.
+| Integrante | Matrícula |
+| --- | --- |
+| Josué Abraham Arteaga Manrique | 18910-1 |
+| Edgar Mauricio Trejo Delgado | 192583-4 |
 
 | Actividad | Responsable | Estado |
 | --- | --- | --- |

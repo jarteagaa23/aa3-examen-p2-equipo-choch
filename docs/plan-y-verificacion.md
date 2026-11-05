@@ -7,7 +7,8 @@
 - [x] Crear las carpetas locales de trabajo y de modelos.
 - [x] Iniciar historial con mensajes de commit en español.
 - [x] Confirmar nombre del equipo: equipo-choch, por decisión del usuario.
-- [ ] Confirmar integrantes y aceptación del nombre por el docente.
+- [x] Confirmar integrantes y matrículas en el README.
+- [ ] Confirmar aceptación del nombre por el docente.
 - [ ] Asignar responsables y revisores reales en el README.
 - [x] Crear el repositorio público con el nombre elegido: `aa3-examen-p2-equipo-choch`.
 - [x] Publicar y verificar la estructura y el historial remoto.
