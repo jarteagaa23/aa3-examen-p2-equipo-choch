@@ -6,7 +6,9 @@ IN1042 · Otoño 2026 · Grupo A7.
 
 Preparación documental y estructura de carpetas. Todavía no hay código, cuadernos, datos descargados, modelos entrenados ni resultados. Los entregables pendientes no se representan mediante archivos vacíos.
 
-Número de equipo: pendiente de confirmar. El nombre definitivo del repositorio público debe ser `aa3-examen-p2-equipo-N`.
+Nombre elegido por el equipo: **equipo-choch**. Repositorio público: [aa3-examen-p2-equipo-choch](https://github.com/jarteagaa23/aa3-examen-p2-equipo-choch).
+
+El enunciado solicita un número en `aa3-examen-p2-equipo-N`; el equipo decidió usar `choch` en su lugar. Queda pendiente confirmar si el docente acepta esa convención.
 
 **Fecha límite del enunciado:** viernes 6 de noviembre de 2026, 23:59. Se entrega la liga del repositorio público en Moodle y se califica el último commit anterior al límite.
 

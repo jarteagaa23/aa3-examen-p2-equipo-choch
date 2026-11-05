@@ -6,7 +6,8 @@
 - [x] Documentar requisitos, entregables, criterios de aceptación y rúbrica.
 - [x] Crear las carpetas locales de trabajo y de modelos.
 - [x] Iniciar historial con mensajes de commit en español.
-- [ ] Confirmar número e integrantes del equipo.
+- [x] Confirmar nombre del equipo: equipo-choch, por decisión del usuario.
+- [ ] Confirmar integrantes y aceptación del nombre por el docente.
 - [ ] Asignar responsables y revisores reales en el README.
 - [ ] Crear el repositorio público con el nombre requerido.
 - [ ] Publicar y verificar la estructura y el historial remoto.
