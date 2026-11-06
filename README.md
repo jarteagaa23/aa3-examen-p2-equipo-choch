@@ -4,7 +4,7 @@ IN1042 · Otoño 2026 · Grupo A7.
 
 ## Estado actual
 
-Preparación documental y estructura de carpetas. Todavía no hay código, cuadernos, datos descargados, modelos entrenados ni resultados. Los entregables pendientes no se representan mediante archivos vacíos.
+Estructura y documentación preparadas. El cuaderno de reseñas negativas ya contiene el código para desarrollar y comparar modelos, **sin ejecutar ni entrenar**. No se han descargado datos ni generado métricas o modelos. El código de CardioRitmo comentado por el equipo todavía no aparece en la rama `main` al preparar esta actualización.
 
 Nombre elegido por el equipo: **equipo-choch**. Repositorio público: [aa3-examen-p2-equipo-choch](https://github.com/jarteagaa23/aa3-examen-p2-equipo-choch).
 
@@ -23,7 +23,8 @@ El enunciado solicita un número en `aa3-examen-p2-equipo-N`; el equipo decidió
 | --- | --- | --- |
 | Estructura inicial y análisis de requisitos | Cuenta local jarteagaa23, con apoyo de Codex | Preparado |
 | Desarrollo y revisión de CardioRitmo | Por asignar | Pendiente |
-| Desarrollo y revisión de Compra Fácil Bajío | Por asignar | Pendiente |
+| Preparación del código de Compra Fácil Bajío | Josué Abraham Arteaga Manrique, con apoyo de Codex | Cuaderno preparado, sin ejecutar |
+| Entrenamiento y revisión de Compra Fácil Bajío | Por asignar | Pendiente |
 | Folletos y maquetas | Por asignar | Pendiente |
 | Integración y revisión final | Por asignar | Pendiente |
 
@@ -40,12 +41,12 @@ Cada integrante debe realizar sus propios commits. Esta tabla se actualizará co
 
 - `ecg/`: futuro cuaderno `DEV_ecg.ipynb`, `resultados_ecg.csv` y `folleto_ecg.pdf`.
 - `ecg/modelo/`: modelo elegido de CardioRitmo.
-- `resenas/`: futuro cuaderno `DEV_resenas.ipynb`, `resultados_resenas.csv` y `folleto_resenas.pdf`.
+- `resenas/`: cuaderno `DEV_resenas.ipynb` preparado; `resultados_resenas.csv` y `folleto_resenas.pdf` pendientes.
 - `resenas/modelo/`: modelo elegido de Compra Fácil Bajío.
 - `pmv/`: espacio opcional para aplicaciones locales del punto extra; su creación no implica que ya estén implementadas.
 - `docs/`: análisis, plan de trabajo y lista de verificación.
 
-Los archivos `.gitkeep` permiten conservar carpetas vacías en Git. Los cuadernos, CSV, PDF y modelos se agregarán cuando se desarrollen y verifiquen.
+Los archivos `.gitkeep` permiten conservar carpetas vacías en Git. Los CSV, PDF y modelos se agregarán cuando se generen y verifiquen; el cuaderno de reseñas se entregará con salidas después de ejecutarlo.
 
 ## Reglas de trabajo
 
@@ -66,4 +67,6 @@ Los archivos `.gitkeep` permiten conservar carpetas vacías en Git. Los cuaderno
 
 Modelos elegidos y enlaces externos: pendientes.
 
-Las instrucciones de instalación, ejecución, carga de modelos y PMV se documentarán cuando exista una implementación comprobada.
+Las instrucciones de instalación y ejecución del cuaderno están en [resenas/README.md](resenas/README.md). Incluye una línea base de clase mayoritaria, Embedding + Conv1D y Embedding + BiLSTM. `ENTRENAR=False` detiene el cuaderno antes del entrenamiento; `EVALUAR_PRUEBA=False` mantiene la prueba final desactivada. La elección se fija con validación antes de evaluar prueba.
+
+El código fue revisado mediante validación estructural, compilación de celdas y comprobaciones aisladas de métricas y selección con datos sintéticos. No se ha ejecutado con TensorFlow ni con el conjunto del examen. Todavía no hay instrucciones de un PMV implementado.

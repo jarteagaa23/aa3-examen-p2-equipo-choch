@@ -1,6 +1,6 @@
 # Plan de trabajo y verificación
 
-## Etapa actual: organización sin código
+## Etapa actual: código de reseñas preparado, sin entrenamiento
 
 - [x] Leer y revisar visualmente las cuatro páginas del examen.
 - [x] Documentar requisitos, entregables, criterios de aceptación y rúbrica.
@@ -13,7 +13,13 @@
 - [x] Crear el repositorio público con el nombre elegido: `aa3-examen-p2-equipo-choch`.
 - [x] Publicar y verificar la estructura y el historial remoto.
 
-La implementación se iniciará cuando el usuario indique continuar con código. Las siguientes etapas son planificación, no trabajo ya realizado.
+Por indicación del usuario se preparó `resenas/DEV_resenas.ipynb`, sin ejecutar sus celdas ni entrenar modelos. El código de CardioRitmo comentado por el equipo todavía no aparece en `main` al preparar esta actualización. Las casillas de cierre siguen pendientes hasta comprobar los resultados reales.
+
+- [x] Preparar el cuaderno de reseñas con la carga y prueba prescritas.
+- [x] Preparar línea base, Embedding + Conv1D y Embedding + BiLSTM.
+- [x] Separar selección con validación y evaluación final de prueba.
+- [x] Documentar dependencias e instrucciones de ejecución.
+- [ ] Ejecutar entrenamiento cuando se autorice y revisar resultados.
 
 ## Orden de trabajo propuesto
 
