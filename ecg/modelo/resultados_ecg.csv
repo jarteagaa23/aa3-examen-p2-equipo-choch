@@ -1,0 +1,5 @@
+modelo,tipo,parametros,sensibilidad,especificidad,auc,cumple,elegido
+Línea base (siempre normal),linea base,0,0.0,1.0,0.5,False,False
+Conv1D,convolucional,5857,0.9928,0.9914,0.9991,True,True
+GRU,recurrente,3393,0.9832,1.0,0.9949,True,False
+Conjunto Conv1D+GRU,conjunto,9250,0.9904,1.0,0.9986,True,False
