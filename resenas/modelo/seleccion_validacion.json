@@ -1,0 +1,112 @@
+{
+  "modelo_elegido": "Embedding + Conv1D",
+  "origen_eleccion": "validation oficial sin tres estrellas",
+  "criterio": "cumplimiento, minimo de cocientes de metas, F1, menos parametros, nombre",
+  "configuracion": {
+    "semilla": 42,
+    "umbral": 0.5,
+    "max_tokens": 20000,
+    "longitud": 180,
+    "dimension_embedding": 64,
+    "lote": 128,
+    "epocas_maximas": 12,
+    "paciencia": 2,
+    "tasa_aprendizaje": 0.001,
+    "tres_estrellas": "excluidas de entrenamiento y validacion"
+  },
+  "versiones": {
+    "python": "3.13.0",
+    "tensorflow": "2.21.0",
+    "keras": "3.15.1",
+    "numpy": "2.3.5",
+    "pandas": "3.1.1",
+    "sklearn": "1.9.1"
+  },
+  "resultados_validacion": [
+    {
+      "modelo": "Clase mayoritaria",
+      "tipo": "linea base",
+      "parametros": 0,
+      "exhaustividad": 0.0,
+      "precision": 0.0,
+      "exactitud": 0.5,
+      "f1": 0.0,
+      "cumple": false,
+      "elegido": false
+    },
+    {
+      "modelo": "Embedding + Conv1D",
+      "tipo": "convolucional",
+      "parametros": 1302657,
+      "exhaustividad": 0.936,
+      "precision": 0.9026036644,
+      "exactitud": 0.9175,
+      "f1": 0.9189985272,
+      "cumple": true,
+      "elegido": true
+    },
+    {
+      "modelo": "Embedding + BiLSTM",
+      "tipo": "recurrente",
+      "parametros": 1306945,
+      "exhaustividad": 0.9105,
+      "precision": 0.9100449775,
+      "exactitud": 0.91025,
+      "f1": 0.9102724319,
+      "cumple": true,
+      "elegido": false
+    }
+  ],
+  "historiales": {
+    "Embedding + Conv1D": {
+      "exactitud": [
+        0.8826249837875366,
+        0.9341375231742859,
+        0.9590250253677368,
+        0.9769562482833862
+      ],
+      "loss": [
+        0.28320279717445374,
+        0.17824417352676392,
+        0.12034885585308075,
+        0.07429377734661102
+      ],
+      "val_exactitud": [
+        0.9142500162124634,
+        0.9175000190734863,
+        0.9079999923706055,
+        0.9039999842643738
+      ],
+      "val_loss": [
+        0.21692529320716858,
+        0.21611237525939941,
+        0.25751736760139465,
+        0.2955613136291504
+      ]
+    },
+    "Embedding + BiLSTM": {
+      "exactitud": [
+        0.8846562504768372,
+        0.9284812211990356,
+        0.9460999965667725
+      ],
+      "loss": [
+        0.28300586342811584,
+        0.1873849779367447,
+        0.14473676681518555
+      ],
+      "val_exactitud": [
+        0.9102500081062317,
+        0.9072499871253967,
+        0.8995000123977661
+      ],
+      "val_loss": [
+        0.2248951494693756,
+        0.2359112799167633,
+        0.25905707478523254
+      ]
+    }
+  },
+  "solapamiento_textual_train_val": 53,
+  "creado_utc": "2026-11-06T23:57:24.337535+00:00"
+}

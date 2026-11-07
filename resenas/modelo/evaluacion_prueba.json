@@ -1,0 +1,23 @@
+{
+  "estado": "completada",
+  "modelo_elegido": "Embedding + Conv1D",
+  "umbral": 0.5,
+  "inicio_utc": "2026-11-06T23:59:24.273619+00:00",
+  "candidatos": [
+    "Clase mayoritaria",
+    "Embedding + Conv1D",
+    "Embedding + BiLSTM"
+  ],
+  "fin_utc": "2026-11-06T23:59:25.446033+00:00",
+  "total_errores_elegido": 319,
+  "matriz_confusion_orden_0_1": [
+    [
+      1817,
+      183
+    ],
+    [
+      136,
+      1864
+    ]
+  ]
+}

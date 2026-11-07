@@ -1,0 +1,4 @@
+modelo,tipo,parametros,exhaustividad,precision,exactitud,cumple,elegido
+Clase mayoritaria,linea base,0,0.0,0.0,0.5,False,False
+Embedding + Conv1D,convolucional,1302657,0.932,0.9106008793356131,0.92025,True,True
+Embedding + BiLSTM,recurrente,1306945,0.9015,0.9147640791476408,0.90875,True,False
