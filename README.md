@@ -1,72 +1,28 @@
-# Examen del Parcial II · Aprendizaje Automático III
+# aa3-examen-p2-equipo-choch
 
-IN1042 · Otoño 2026 · Grupo A7.
+Examen del Parcial II · IN1042 Aprendizaje Automático III · Otoño 2026
 
-## Estado actual
+## Integrantes
+- Josué Abraham Arteaga Manrique (18910-1)
+- Edgar Mauricio Trejo Delgado (192583-4)
 
-Estructura y documentación preparadas. El cuaderno de reseñas negativas ya contiene el código para desarrollar y comparar modelos, **sin ejecutar ni entrenar**. No se han descargado datos ni generado métricas o modelos. El código de CardioRitmo comentado por el equipo todavía no aparece en la rama `main` al preparar esta actualización.
+## Quién hizo qué
+| Integrante | Trabajo |
+|---|---|
+| Josué Arteaga | Problema 2 (reseñas): `DEV_resenas.ipynb` (carga, exploración, vectorización, línea base, modelos Embedding + Conv1D y Embedding + BiLSTM, evaluación de prueba), `resenas/README.md` y `folleto_resenas.pdf`. |
+| Mauricio Trejo | Problema 1 (ECG) completo: `DEV_ecg.ipynb`, modelos, `resultados_ecg.csv`, modelo guardado y `folleto_ecg.pdf`. Problema 2: ejecución del cuaderno. |
 
-Nombre elegido por el equipo: **equipo-choch**. Repositorio público: [aa3-examen-p2-equipo-choch](https://github.com/jarteagaa23/aa3-examen-p2-equipo-choch).
+Usamos herramientas de IA como apoyo, como lo permite el examen.
 
-El enunciado solicita un número en `aa3-examen-p2-equipo-N`; el equipo decidió usar `choch` en su lugar. Queda pendiente confirmar si el docente acepta esa convención.
+## Modelos elegidos
+| Problema | Modelo elegido | Resultado en la prueba | ¿Cumple? |
+|---|---|---|---|
+| 1 · CardioRitmo (latidos) | **Conv1D** (5,857 parámetros) | Sensibilidad 99.3 %, especificidad 99.1 % | Sí |
+| 2 · Compra Fácil Bajío (reseñas) | **Embedding + Conv1D** | Exhaustividad 93.2 %, precisión 91.1 % | Sí |
 
-**Fecha límite del enunciado:** viernes 6 de noviembre de 2026, 23:59. Se entrega la liga del repositorio público en Moodle y se califica el último commit anterior al límite.
-
-## Integrantes y contribuciones
-
-| Integrante | Matrícula |
-| --- | --- |
-| Josué Abraham Arteaga Manrique | 18910-1 |
-| Edgar Mauricio Trejo Delgado | 192583-4 |
-
-| Actividad | Responsable | Estado |
-| --- | --- | --- |
-| Estructura inicial y análisis de requisitos | Cuenta local jarteagaa23, con apoyo de Codex | Preparado |
-| Desarrollo y revisión de CardioRitmo | Por asignar | Pendiente |
-| Preparación del código de Compra Fácil Bajío | Josué Abraham Arteaga Manrique, con apoyo de Codex | Cuaderno preparado, sin ejecutar |
-| Entrenamiento y revisión de Compra Fácil Bajío | Por asignar | Pendiente |
-| Folletos y maquetas | Por asignar | Pendiente |
-| Integración y revisión final | Por asignar | Pendiente |
-
-Cada integrante debe realizar sus propios commits. Esta tabla se actualizará con contribuciones reales verificables en el historial; no representa trabajo técnico ya terminado.
-
-## Casos y criterios de aceptación
-
-| Caso | Clase positiva | Requisitos en prueba, umbral 0.5 | Modelo elegido |
-| --- | --- | --- | --- |
-| CardioRitmo | Latido anormal | Sensibilidad ≥ 95 %, especificidad ≥ 95 % y modelo de máximo 20,000 parámetros | Pendiente; se elegirá mediante validación |
-| Compra Fácil Bajío | Reseña negativa, de 1 o 2 estrellas | Exhaustividad ≥ 90 % y precisión ≥ 85 %; modelo entrenado por el equipo | Pendiente; se elegirá mediante validación |
-
-## Organización
-
-- `ecg/`: futuro cuaderno `DEV_ecg.ipynb`, `resultados_ecg.csv` y `folleto_ecg.pdf`.
-- `ecg/modelo/`: modelo elegido de CardioRitmo.
-- `resenas/`: cuaderno `DEV_resenas.ipynb` preparado; `resultados_resenas.csv` y `folleto_resenas.pdf` pendientes.
-- `resenas/modelo/`: modelo elegido de Compra Fácil Bajío.
-- `pmv/`: espacio opcional para aplicaciones locales del punto extra; su creación no implica que ya estén implementadas.
-- `docs/`: análisis, plan de trabajo y lista de verificación.
-
-Los archivos `.gitkeep` permiten conservar carpetas vacías en Git. Los CSV, PDF y modelos se agregarán cuando se generen y verifiquen; el cuaderno de reseñas se entregará con salidas después de ejecutarlo.
-
-## Reglas de trabajo
-
-1. Usar exactamente las fuentes, cargas y particiones de prueba indicadas en el examen.
-2. Tomar decisiones de arquitectura, preparación y selección únicamente con entrenamiento y validación.
-3. Reservar la prueba para una única evaluación final de la línea base y los modelos ya definidos; no reajustar después de ver sus resultados.
-4. Evaluar a umbral fijo de 0.5. Reportar con honestidad cualquier incumplimiento.
-5. Guardar los cuadernos ejecutados de arriba abajo y con salidas.
-6. Mantener commits descriptivos en español y contribuciones propias de cada integrante.
-7. Guardar cada modelo elegido en su carpeta `modelo/`. Si supera 100 MB, proporcionar en este README un enlace público de Hugging Face o Drive.
-
-## Documentación
-
-- [Análisis del examen](docs/analisis-examen.md).
-- [Plan de trabajo y verificación](docs/plan-y-verificacion.md).
-
-## Modelos y ejecución
-
-Modelos elegidos y enlaces externos: pendientes.
-
-Las instrucciones de instalación y ejecución del cuaderno están en [resenas/README.md](resenas/README.md). Incluye una línea base de clase mayoritaria, Embedding + Conv1D y Embedding + BiLSTM. `ENTRENAR=False` detiene el cuaderno antes del entrenamiento; `EVALUAR_PRUEBA=False` mantiene la prueba final desactivada. La elección se fija con validación antes de evaluar prueba.
-
-El código fue revisado mediante validación estructural, compilación de celdas y comprobaciones aisladas de métricas y selección con datos sintéticos. No se ha ejecutado con TensorFlow ni con el conjunto del examen. Todavía no hay instrucciones de un PMV implementado.
+## Estructura
+```
+README.md
+ecg/       DEV_ecg.ipynb, resultados_ecg.csv, modelo/, folleto_ecg.pdf
+resenas/   DEV_resenas.ipynb, resultados_resenas.csv, modelo/, folleto_resenas.pdf
+```
